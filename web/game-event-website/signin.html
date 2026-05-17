@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription | PHASE II</title>
+    
+    <meta name="description" content="Rejoignez la session de récupération PHASE II. Remplissez le formulaire pour participer.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="page-header">
+        <h1>Rejoindre la Session</h1>
+        <p><em>Prenez place dans le lobby de la guérison.</em></p>
+    </header>
+
+    <nav id="page-nav">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="signin.html">S'inscrire</a></li>
+            <li><a href="details.html">Planning</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Formulaire d'Inscription Détaillé</h2>
+            <form action="confirmation.html" method="get">
+                
+                <fieldset>
+                    <legend>Informations Personnelles</legend>
+                    <label for="atualname">Real Name:</label>
+                    <input type="text" id="actualname" name="userrealname" maxlength="50" size="20" required placeholder="Ex: Abdelaziz Masmoudi">
+                    <label for="username">Pseudo Gamer :</label>
+                    <input type="text" id="username" name="user" maxlength="15" size="20" required placeholder="Ex: RespawnKing">
+                    <br><br>
+
+                    <label for="tel">Téléphone (Tunisie) :</label>
+                    <input type="tel" id="tel" name="phone" pattern="[0-9]{8}" placeholder="Ex: 74123456" required title="Veuillez entrer 8 chiffres.">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Détails de la Session</legend>
+                    
+                    <label for="game-select">Choisir votre jeu :</label>
+                    <select name="game" id="game-select">
+                        <optgroup label="Stratégie & Calme">
+                            <option value="chess">Échecs</option>
+                            <option value="minecraft">Minecraft (Creative)</option>
+                        </optgroup>
+                        <optgroup label="Action & Réflexes">
+                            <option value="fc24">FC 24</option>
+                            <option value="valorant">Valorant</option>
+                        </optgroup>
+                    </select>
+                    <br><br>
+
+                    <label for="region">Votre ville (Sfax/Tunis...) :</label>
+                    <input list="cities" id="region" name="city">
+                    <datalist id="cities">
+                        <option value="Sfax">
+                        <option value="Tunis">
+                        <option value="Sousse">
+                        <option value="Gabès">
+                    </datalist>
+                    <br><br>
+
+                    <label for="avatar">Photo de profil :</label>
+                    <input type="file" id="avatar" name="profile_pic">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Votre Parcours</legend>
+                    <label for="message">Pourquoi voulez-vous rejoindre PHASE II ?</label><br>
+                    <textarea id="message" name="motivation" rows="5" cols="40" placeholder="Parlez-nous de votre chemin vers le rétablissement..."></textarea>
+                </fieldset>
+
+                <div style="margin-top: 20px;">
+                    <button type="submit" class="button">Confirmer l'inscription</button>
+                    <button type="reset" class="button">Effacer</button>
+                </div>
+            </form>
+        </article>
+    </main>
+
+    <footer id="page-footer">
+        <p>En cas de problème avec le formulaire : <a href="mailto:admin@phase2.tn">Contacter l'admin</a></p>
+    </footer>
+
+</body>
+</html>
+

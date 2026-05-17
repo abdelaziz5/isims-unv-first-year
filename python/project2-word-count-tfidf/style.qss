@@ -1,0 +1,91 @@
+/*
+ * style.qss - Qt Style Sheet
+ * Created: 3/4/2026
+ *
+ * QSS Toolkit Quick Tips:
+ * - Press Ctrl+Space (Cmd+Space) for intelligent auto-completion
+ * - Use Ctrl+/ (Cmd+/) to comment/uncomment code blocks
+ * - Click color gutter icons to open the visual color picker
+ * - Type :: for sub-controls (e.g., QScrollBar::handle)
+ * - Type : for pseudo-states (e.g., QPushButton:hover)
+ * - RGB/RGBA colors: rgb(255, 0, 0) or rgba(255, 0, 0, 128)
+ */
+
+/* Add your QSS styles here */
+
+/* Main Window */
+QMainWindow, QWidget {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+}
+
+/* Text Edit Area */
+QTextEdit {
+    background-color: #252526;
+    border: 1px solid #3c3c3c;
+    border-radius: 5px;
+    padding: 10px;
+    color: #ffffff;
+    selection-background-color: #267868;
+}
+
+/* The Table */
+QTableWidget {
+    background-color: #252526;
+    color: #d4d4d4;
+    gridline-color: #3c3c3c;
+    border: none;
+    border-radius: 5px;
+}
+
+QHeaderView::section {
+    background-color: #333333;
+    padding: 4px;
+    border: 1px solid #3c3c3c;
+    font-weight: bold;
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: #333333;
+    border: 1px solid #3c3c3c;
+    border-top-left-radius: 8px;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #333333;
+    border: 1px solid #454545;
+    border-radius: 4px;
+    padding: 8px 15px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+/* Primary "Calculer" Button Highlight */
+#bouton_calculer {
+    background-color: #007acc;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+#bouton_calculer:hover {
+    background-color: #1f8ad2;
+}
+
+/* Secondary "Effacer" Button */
+#bouton_effacer {
+    color: #f44336; /* Subtle red text for delete */
+    font-weight: bold;
+}
+
+/* Status Labels */
+QLabel {
+    color: #858585;
+    font-size: 12px;
+}

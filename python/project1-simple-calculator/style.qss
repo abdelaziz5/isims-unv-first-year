@@ -1,0 +1,48 @@
+QWidget {
+background-color: #2b2b2b;
+color: #ffffff;
+font-family: Arial;
+}
+QLineEdit {
+background-color: #3b3b3b;
+border: 2px solid #000000;
+border-radius: 5px;
+color: #00efbc;
+padding: 5px;
+}
+QLineEdit:focus {
+border-color: #00ffcc;
+}
+QPushButton {
+background-color: #4b4b4b;
+border: 2px solid #000000;
+border-radius: 5px;
+padding: 5px;
+color: #00ffcc;
+font-weight: bold;
+min-width: 80px;
+}
+QPushButton:hover {
+background-color: #5b5b5b;
+}
+QPushButton:pressed {
+background-color: #6b6b6b;
+}
+
+QLabel {
+font-size: 14px;
+margin-bottom: 5px;
+}
+
+QLabel[status = "error"] {
+color : red;
+}
+#note1 {
+color: #ffff60;
+margin-bottom: 5px;
+}
+#note2 {
+color: #ffff70;
+font-size: 12px;
+margin-bottom: 10px;
+}
