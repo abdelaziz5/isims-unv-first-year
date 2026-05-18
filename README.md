@@ -41,6 +41,67 @@ A project focused on translating a visual theme into a clean web interface , ens
 
 ---
 
+## 🚀 How to Run the Python Code Locally
+
+Follow these steps to set up your environment, install the necessary dependencies, and run the applications on your local machine.
+
+### 📋 Prerequisites
+Before you begin, ensure you have the following installed:
+* **Python 3.x**
+* **pip** (Python package installer)
+* **git** (optional, to clone the repository)
+
+---
+
+### 🛠️ Step-by-Step Setup
+
+#### 1. Clone or Download the Repository
+Open your terminal (or PowerShell), clone the repository, and navigate into the root directory:
+```bash
+git clone https://github.com/abdelaziz5/isims-unv-first-year.git
+cd isims-semester2-projects
+```
+*(Alternatively, you can download the project as a ZIP file from GitHub, extract it, and open your terminal inside that main folder).*
+
+#### 2. Create and Activate a Virtual Environment (Recommended)
+To keep your global Python installation clean, set up an isolated virtual environment:
+
+* **On Windows (PowerShell):**
+  ```powershell
+  python -m venv .venv
+  .\.venv\Scripts\activate.ps1
+  ```
+* **On Windows (Command Prompt / CMD):**
+  ```cmd
+  python -m venv .venv
+  .\.venv\Scripts\activate.bat
+  ```
+
+*Once activated, you will see `(.venv)` appear at the very beginning of your terminal line.*
+
+#### 3. Install Dependencies from requirements.txt
+Run this exact command while your virtual environment is active. It tells pip to read your `requirements.txt` file from the root folder and automatically download and install all the necessary libraries (like `PyQt5`) for you:
+```bash
+pip install -r requirements.txt
+```
+
+#### 4. Navigate to a Project and Run It
+Now that your environment is fully configured, navigate into the specific project folder you want to view and execute the script:
+
+* **Example: Running the Simple Calculator**
+  ```bash
+  cd python/01-simple-calculator
+  python main.py
+  ```
+
+* **Example: Running the Word Count & TF-IDF Tool**
+  ```bash
+  cd python/02-word-count-tfidf
+  python main.py
+  ```
+
+---
+
 ## 👤 Contact & Connect
 * **Name:** Abdelaziz Masmoudi 
 * **LinkedIn:** [Click Here](www.linkedin.com/in/abdelaziz-masmoudi-me)
